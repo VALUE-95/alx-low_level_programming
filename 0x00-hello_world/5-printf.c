@@ -1,5 +1,6 @@
 #include <stdio.h>
-/** main - printed a programme on a newline using the function printf
+/**
+ * main - printed a programme on a newline using the function printf
  * Return: 0 (Success)
  */
 int main(void)
