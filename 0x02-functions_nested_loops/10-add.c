@@ -1,6 +1,3 @@
-#10-add.c CODE
-
-
 #include "main.h"
 
 
