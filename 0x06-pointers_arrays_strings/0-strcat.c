@@ -1,40 +1,25 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - concatenates two strings dest and scr
- *Returns (src)
+ * _strcat - concatenates two strings
+ * @dest: destination string
+ * @src: source string
+ * Return: dest;
  */
-
-char *_strcat(char *dest, char *src);
-
-int main()
-{
-	char dest[] = "Hello";
-	char src[] = "World";
-
-	char *pqr = _strcat(dest, src);
-
-	printf("Concatenated String: %s\n", pqr);
-
-	return 0;
-}
-
 char *_strcat(char *dest, char *src)
 {
-	char *pqr = dest;
+	int destlen = 0;
+	int srclen = 0;
+	int q;
 
-	while (*dest != '\0')
-	{
-		dest++;
-	}
+	for (q = 0; dest[q] != '\0' ; q++)
+		destlen++;
 
-	while (*src != '\0')
-	{
-		*dest = *src;
-		dest++;
-		src++;
-	}
+	for (q = 0; dest[q] != '\0' ; q++)
+		srclen++;
 
-	*dest = '\0';
-	return pqr;
+	for (q = 0 ; q <= srclen; q++)
+		dest[destlen + q] = src[q];
+
+	return (dest);
 }
