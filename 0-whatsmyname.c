@@ -2,16 +2,16 @@
 
 /**
  *main - function to print programmme name
- *@argc - argument count
- *@argv - argument value
+ *@c - argument count
+ *@v - argument value
  *return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int c, char *v[])
 {
-	(void) argc;
+	(void) c;
 
-	printf("%s \n", argv[0]);
+	printf("%s \n", v[0]);
 	return (0);
 }
 
