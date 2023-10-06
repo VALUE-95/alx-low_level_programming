@@ -36,6 +36,7 @@ void simple_print_buffer(int *buffer, unsigned int size)
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
     int *a;
