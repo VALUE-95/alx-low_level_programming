@@ -1,10 +1,6 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION _POINTERS_H
-
-#include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-#include <unistd.h>
 
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
