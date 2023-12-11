@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -shared -o libhack101.so -fPIC hack101.c
-export LD_PRELOAD=./libhack101.so:$LD_LIBRARY_PATH
+gcc -shared -o myprintf.so -fPIC test.c
+export LD_PRELOAD=./myprintf.so:$LD_LIBRARY_PATH
